@@ -9,14 +9,13 @@ void main() => runApp(MaterialApp(
         ),
         body: Stack(
           children: <Widget>[
-            Image(
-              image: AssetImage("assets/images/102.jpeg"),
+            Image.network(
+              "https://images.pexels.com/photos/5957592/pexels-photo-5957592.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+              fit: BoxFit.cover,
+              height: double.infinity,
+              width: double.infinity,
+              alignment: Alignment.center,
             ),
-
-            /*  Image(
-              image: AssetImage("assets/images/102.jpeg"),
-            ), */
-
             Padding(
               padding: const EdgeInsets.fromLTRB(0.0, 0.0, .0, 0.0),
               child: Center(
@@ -27,8 +26,8 @@ void main() => runApp(MaterialApp(
                       "let's cheer up!",
                       textAlign: TextAlign.right,
                       style: TextStyle(
-                        fontSize: 25.0,
-                        fontFamily: 'AkayaTelivigala',
+                        fontSize: 20.0,
+                        fontFamily: 'PermanentMarker',
                       ),
                     ),
                   ),
